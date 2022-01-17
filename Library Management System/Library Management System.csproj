@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8248A056-D677-42B5-A7B0-5E9F7826C1E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library_Management_System</RootNamespace>
+    <AssemblyName>Library Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addnewBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addnewBooks.Designer.cs">
+      <DependentUpon>addnewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteMembers.Designer.cs">
+      <DependentUpon>deleteMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="librarydbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>librarydbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="librarydbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>librarydbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\bookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\bookInfo.Designer.cs">
+      <DependentUpon>bookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookissueInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookissueInfo.Designer.cs">
+      <DependentUpon>bookissueInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookReturaInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookReturaInfo.Designer.cs">
+      <DependentUpon>bookReturaInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="borrowBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borrowBook.Designer.cs">
+      <DependentUpon>borrowBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editemember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editemember.Designer.cs">
+      <DependentUpon>Editemember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="librarydbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>librarydbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="librarydbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>librarydbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="librarydbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>librarydbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="librarydbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>librarydbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="librarydbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>librarydbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="membersInfo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="membersInfo2.Designer.cs">
+      <DependentUpon>membersInfo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="returnBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnBooks.Designer.cs">
+      <DependentUpon>returnBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="returnDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>returnDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Searchbooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searchbooks.Designer.cs">
+      <DependentUpon>Searchbooks.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addnewBooks.resx">
+      <DependentUpon>addnewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteMembers.resx">
+      <DependentUpon>deleteMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\bookInfo.resx">
+      <DependentUpon>bookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookissueInfo.resx">
+      <DependentUpon>bookissueInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookReturaInfo.resx">
+      <DependentUpon>bookReturaInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrowBook.resx">
+      <DependentUpon>borrowBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editemember.resx">
+      <DependentUpon>Editemember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="membersInfo2.resx">
+      <DependentUpon>membersInfo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnBooks.resx">
+      <DependentUpon>returnBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searchbooks.resx">
+      <DependentUpon>Searchbooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="librarydbDataSet.xsc">
+      <DependentUpon>librarydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>librarydbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="librarydbDataSet.xss">
+      <DependentUpon>librarydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet1.xsc">
+      <DependentUpon>librarydbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>librarydbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="librarydbDataSet1.xss">
+      <DependentUpon>librarydbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet2.xsc">
+      <DependentUpon>librarydbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>librarydbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="librarydbDataSet2.xss">
+      <DependentUpon>librarydbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet3.xsc">
+      <DependentUpon>librarydbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>librarydbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="librarydbDataSet3.xss">
+      <DependentUpon>librarydbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet4.xsc">
+      <DependentUpon>librarydbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>librarydbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="librarydbDataSet4.xss">
+      <DependentUpon>librarydbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet5.xsc">
+      <DependentUpon>librarydbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>librarydbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="librarydbDataSet5.xss">
+      <DependentUpon>librarydbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet6.xsc">
+      <DependentUpon>librarydbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="librarydbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>librarydbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="librarydbDataSet6.xss">
+      <DependentUpon>librarydbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="returnDataSet.xsc">
+      <DependentUpon>returnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="returnDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>returnDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="returnDataSet.xss">
+      <DependentUpon>returnDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo library1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="librarydb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="librarydb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>librarydb.mdf</DependentUpon>
+    </Content>
+    <Content Include="return.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="return_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>return.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
